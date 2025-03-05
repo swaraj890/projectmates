@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectmates - Final Year Project Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Projectmates</h1>
+      <p>Your Dream Project, Our Expertise – Let’s Build Something Amazing!</p>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h2>Struggling with Your Final Year Project? We’ve Got You Covered!</h2>
+      <p>We provide end-to-end solutions for AI, ML, Computer Vision, Blockchain, and Web Development projects. From ideation to deployment, we’re here to help you succeed.</p>
+      <a href="#projects" class="btn">Explore Projects</a>
+      <a href="pricing.html" class="btn secondary">View Pricing</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Our Projects</h2>
+      <div class="project-grid">
+        <!-- Initial 4 Projects -->
+        <div class="project-tile">
+          <img src="images/stock-market.jpg" alt="Stock Market Analysis">
+          <h3>Stock Market Analysis with AI</h3>
+          <p>Predict stock prices using LSTM and deep learning.</p>
+        </div>
+        <div class="project-tile">
+          <img src="images/fake-news.jpg" alt="Fake News Detection">
+          <h3>Fake News Detection</h3>
+          <p>Detect fake news using NLP and machine learning.</p>
+        </div>
+        <div class="project-tile">
+          <img src="images/traffic-sign.jpg" alt="Traffic Sign Recognition">
+          <h3>Traffic Sign Recognition</h3>
+          <p>Recognize traffic signs using computer vision.</p>
+        </div>
+        <div class="project-tile">
+          <img src="images/medical-diagnosis.jpg" alt="Medical Diagnosis">
+          <h3>AI-Based Medical Diagnosis</h3>
+          <p>Detect diseases from X-rays using deep learning.</p>
+        </div>
+        <!-- Hidden Projects -->
+        <div class="project-tile hidden">
+          <img src="images/autonomous-drone.jpg" alt="Autonomous Drone">
+          <h3>Autonomous Drone Navigation</h3>
+          <p>Build a drone that avoids obstacles using AI.</p>
+        </div>
+        <div class="project-tile hidden">
+          <img src="images/deepfake-detection.jpg" alt="Deepfake Detection">
+          <h3>Deepfake Detection</h3>
+          <p>Identify deepfake videos using GANs.</p>
+        </div>
+        <div class="project-tile hidden">
+          <img src="images/virtual-tryon.jpg" alt="Virtual Try-On">
+          <h3>Virtual Try-On for E-Commerce</h3>
+          <p>AR-based virtual try-on for clothes and accessories.</p>
+        </div>
+        <div class="project-tile hidden">
+          <img src="images/wildlife-monitoring.jpg" alt="Wildlife Monitoring">
+          <h3>AI-Powered Wildlife Monitoring</h3>
+          <p>Track wildlife using computer vision.</p>
+        </div>
+        <div class="project-tile hidden">
+          <img src="images/sign-language.jpg" alt="Sign Language Translator">
+          <h3>Sign Language Translator</h3>
+          <p>Convert sign language to text using AI.</p>
+        </div>
+        <div class="project-tile hidden">
+          <img src="images/crop-disease.jpg" alt="Crop Disease Detection">
+          <h3>Crop Disease Detection</h3>
+          <p>Detect crop diseases using deep learning.</p>
+        </div>
+      </div>
+      <button id="show-more" class="btn">Show More</button>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a team of experts in AI, ML, Computer Vision, and Blockchain. Our mission is to help students build innovative and functional final-year projects that stand out.</p>
+      <h3>Our Motive</h3>
+      <p>We believe that every student deserves the opportunity to showcase their skills and creativity. Our goal is to provide affordable, high-quality project solutions that help students excel in their academic and professional journeys.</p>
+      <h3>What We Offer</h3>
+      <ul>
+        <li>End-to-end project development.</li>
+        <li>Mentorship and consultation.</li>
+        <li>Professional documentation and PPTs.</li>
+        <li>Deployment and UI/UX design.</li>
+        <li>Workshops and training sessions.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="contact-details">
+          <h3>Get in Touch</h3>
+          <p>Have questions or need assistance? Reach out to us!</p>
+          <ul>
+            <li>📧 Email: <a href="mailto:teamprojectmate@yahoo.com">teamprojectmate@yahoo.com</a></li>
+            <li>📞 Call: <a href="tel:7008490090">7008490090</a> / <a href="tel:9439768099">9439768099</a></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Projectmates. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript to show more projects
+    document.getElementById('show-more').addEventListener('click', function () {
+      const hiddenProjects = document.querySelectorAll('.project-tile.hidden');
+      hiddenProjects.forEach(project => project.classList.remove('hidden'));
+      this.style.display = 'none'; // Hide the "Show More" button
+    });
+  </script>
+</body>
+</html>
